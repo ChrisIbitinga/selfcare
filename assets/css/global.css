@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body,
+html{
+    font-family: 'Lato', sans-serif;
+    color: var(--ib-text-black);
+}
+
+:root{
+--ib-primary: #5CA720;
+--ib-text-black: #161616;
+--ib-hr: #A5A1A1;
+--ib-secundary: #F9F9F9;
+--ib-white: #fff;
+}
+
+/************************ HELPERS*************** */
+.uppercase{
+    text-transform:uppercase;
+}
+.container.container-lg{
+    width: 85%;
+}
+
+/* *********************HEADER*******************/
+/* NAV */
+.nav{
+    width: 100%;
+    max-width: 1380px;
+    background: var(--ib-white);
+    min-height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem 6rem;
+}
+/* BRAND  */
+.brand{
+    display: flex;
+}
+.brand>a{
+    color: var(--ib-text-black);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-left: .4rem;
+}
+/* HERO */
+.hero{
+    width: 100%;
+    max-width: 1380px;
+    min-height: 380px;
+    background: url('../img/banner.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* BOX CART */
+.box-cart{
+    display: flex;
+    color: var(--ib-primary);
+}
+.box-cart span{
+    display: flex;
+    color: var(--ib-primary);
+    margin-left: 1rem;
+    cursor:pointer;
+}
+
+
+/************************ PRODUCTS*****************/
+
+/* BAR PRODUCTS */
+.bar-products{
+    width: 100%;
+    min-height: 4.5rem;
+    border-bottom: 1px solid var(--ib-hr);
+    padding-top: 1.3rem
+
+}
+/* PROMO */
+.bar-products span{
+    font-weight: 800;
+}
+
+/* BOX PRODUCTS  */
+.box-products{
+    padding-top: 1.3rem ;
+}
+ .card{
+    max-width: 100%;
+    min-height: 200px;
+    box-shadow: none;
+    border-radius:4px
+}
+.card-content{
+    padding-left:0!important;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.card-content a{
+   color: var(--ib-text-black);
+}
+.card-content p{
+    padding-top: .4rem;
+ }
+ .card-content p span{
+    color:var(--ib-primary);
+ }
+.card img{
+    min-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius:4px!important;
+}
+
+.bg-grey{
+background:#A5A1A1;
+}
